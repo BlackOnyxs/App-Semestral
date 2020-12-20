@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "128594055559",
+    "project_id": "appsemestral",
+    "storage_bucket": "appsemestral.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:128594055559:android:ff4c11e0ed4e4f5244c322",
+        "android_client_info": {
+          "package_name": "com.example.appsemestral"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "128594055559-0n1316gso7auu96sq5um4pktg9pec92l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDHukRNs4YFu14TAEM371PhJKzV3YbO3U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "128594055559-0n1316gso7auu96sq5um4pktg9pec92l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

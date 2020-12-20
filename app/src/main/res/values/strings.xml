@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">appSemestral</string>
+    <string name="home_title">Artículos</string>
+
+    <string name="dialog_upload_btn">Upload</string>
+    <string name="dialog_cancel_btn">Cancel</string>
+    <string name="firestore_successAdd">Success Add.</string>
+    <string name="firestore_errorAdd">Error add.</string>
+    <string name="tv_upload_article">Subir Artículo</string>
+    <string name="hint_et_title">Ingresa el título</string>
+    <string name="hint_et_content">Ingresa el contenido</string>
+</resources>
