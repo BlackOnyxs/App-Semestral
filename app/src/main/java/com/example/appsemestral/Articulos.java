@@ -1,11 +1,12 @@
 package com.example.appsemestral;
 
 import java.sql.Timestamp;
+import java.util.Date;
 
 public class Articulos {
     private String titulo;
     private String contenido;
-    private Timestamp fecha;
+    private Date fecha;
 
     public Articulos() {
     }
@@ -32,11 +33,11 @@ public class Articulos {
         this.contenido = contenido;
     }
 
-    public Timestamp getFecha() {
+    public Date getFecha() {
         return fecha;
     }
 
-    public void setFecha(Timestamp fecha) {
+    public void setFecha(Date fecha) {
         this.fecha = fecha;
     }
 
