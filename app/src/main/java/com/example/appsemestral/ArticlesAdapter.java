@@ -49,16 +49,19 @@ public class ArticlesAdapter extends RecyclerView.Adapter<ArticlesAdapter.Articl
     }
 
     public void add(Articulos article) {
-        if (!containsFile(article)) {
+        if (!containsFile(article.getTitulo(), articles)) {
             articles.add(article);
             notifyItemInserted(articles.size() - 1);
-        } else if (containsFile(article)) {
+        } else if (containsFile(article.getTitulo(), articles)) {
             final int index = articles.indexOf(article);
             articles.set(index, article);
             notifyItemChanged(index);
         }
     }
 
+    public ArrayList<Articulos> getArticles(){
+        return this.articles;
+    }
     public void delete(Articulos article) {
         if (articles.contains(article)) {
             final int index = articles.indexOf(article);
@@ -67,11 +70,11 @@ public class ArticlesAdapter extends RecyclerView.Adapter<ArticlesAdapter.Articl
         }
     }
 
-    private boolean containsFile(Articulos article) {
+    public static boolean containsFile(String title, ArrayList<Articulos> articles) {
         boolean contains = false;
         for (Articulos a :
                 articles) {
-            if (article.getTitulo().equals(a.getTitulo())) {
+            if (title.equals(a.getTitulo())) {
                 contains = true;
                 break;
             }

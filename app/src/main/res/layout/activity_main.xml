@@ -17,9 +17,10 @@
         android:text="@string/home_title"
         android:textSize="24sp"
         android:textStyle="bold"
+        android:visibility="gone"
         />
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_homeFiles"
+        android:id="@+id/rv_homeArticles"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
@@ -41,11 +42,24 @@
         android:layout_marginBottom="40dp"
         android:layout_marginEnd="40dp"
         app:backgroundTint="@color/accent_color"
-        android:src="@drawable/add" />
+        android:src="@drawable/add"
+        />
 
+    <TextView
+        android:id="@+id/tv_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/main_tvEmpty"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        />
 
     <ProgressBar
-        android:id="@+id/pb_home"
+        android:id="@+id/pb_main"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"

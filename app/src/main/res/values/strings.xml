@@ -9,4 +9,8 @@
     <string name="tv_upload_article">Subir Artículo</string>
     <string name="hint_et_title">Ingresa el título</string>
     <string name="hint_et_content">Ingresa el contenido</string>
+    <string name="title_required_message">El Título es requerido.</string>
+    <string name="main_tvEmpty">No hay artículos para mostrar.</string>
+    <string name="firestore_errorArticles">No fue posible acceder a los artículos.</string>
+    <string name="title_repet_message">Ya existe un artículo con ese titulo.</string>
 </resources>
