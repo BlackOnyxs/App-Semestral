@@ -7,14 +7,16 @@ public class Articulos {
     private String titulo;
     private String contenido;
     private Date fecha;
+    private String id;
 
     public Articulos() {
     }
 
-    public Articulos(String titulo, String contenido, Timestamp fecha) {
+    public Articulos(String titulo, String contenido, Date fecha, String id) {
         this.titulo = titulo;
         this.contenido = contenido;
         this.fecha = fecha;
+        this.id = id;
     }
 
     public String getTitulo() {
@@ -41,12 +43,21 @@ public class Articulos {
         this.fecha = fecha;
     }
 
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
     @Override
     public String toString() {
         return "Articulos{" +
                 "titulo='" + titulo + '\'' +
                 ", contenido='" + contenido + '\'' +
                 ", fecha=" + fecha +
+                ", id='" + id + '\'' +
                 '}';
     }
 }

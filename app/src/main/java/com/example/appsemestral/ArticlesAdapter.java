@@ -82,6 +82,22 @@ public class ArticlesAdapter extends RecyclerView.Adapter<ArticlesAdapter.Articl
         return contains;
     }
 
+    public static boolean validateUpdate(String title, ArrayList<Articulos> articles){
+        boolean isValid = true;
+        int counter = 0;
+        for (Articulos a :
+                articles) {
+            if (title.equals(a.getTitulo())) {
+                counter++;
+            }
+        }
+        if ( counter > 1 ) {
+            isValid = false;
+        }
+
+        return isValid;
+    }
+
     static class ArticlesViewHolder extends RecyclerView.ViewHolder {
         private View view;
         private TextView tvFileName;

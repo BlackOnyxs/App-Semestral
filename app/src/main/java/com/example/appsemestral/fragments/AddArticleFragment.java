@@ -103,7 +103,7 @@ public class AddArticleFragment extends DialogFragment implements DialogInterfac
 
     private Articulos configArticle(EditText etTitle, EditText etContent) {
         return new Articulos(etTitle.getText().toString().trim(),
-                etContent.getText().toString().trim(), new Timestamp(Calendar.getInstance().getTimeInMillis()));
+                etContent.getText().toString().trim(), new Timestamp(Calendar.getInstance().getTimeInMillis()), null);
     }
 
     @Override
