@@ -48,7 +48,8 @@ public class FirestoreAPI {
 
     public void uploadArticle(AlertDialog dialog, Articulos article, Context context){
         if ( mFirestore != null ){
-            getArticlesCollection().document().set(article).addOnSuccessListener(new OnSuccessListener<Void>() {
+            getArticlesCollection().document().set(article)
+                    .addOnSuccessListener(new OnSuccessListener<Void>() {
                 @Override
                 public void onSuccess(Void aVoid) {
                     Toast.makeText(context, context.getString(R.string.firestore_successAdd),Toast.LENGTH_SHORT).show();

@@ -13,4 +13,12 @@
     <string name="main_tvEmpty">No hay artículos para mostrar.</string>
     <string name="firestore_errorArticles">No fue posible acceder a los artículos.</string>
     <string name="title_repet_message">Ya existe un artículo con ese titulo.</string>
+
+    <string name="tv_title">Título</string>
+    <string name="timestamp_s">TimeStamp: %s</string>
+    <string name="dialog_ok_btn">Ok</string>
+    <string name="firestore_success_updated">Actualizado.</string>
+    <string name="firestore_error_updated">Error al actualizar.</string>
+    <string name="firestore_success_deleted">Borrado.</string>
+    <string name="firestore_error_delete">Error.</string>
 </resources>
